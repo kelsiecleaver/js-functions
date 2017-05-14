@@ -139,11 +139,11 @@ function isGreaterThan(a,b){
  * @param {number} y
  * @return {number} the smallest number
  */
-function minimum(x,y){
-  if(x < y){
-    return  y;
-  }
+function minimum(num1,num2){
+  return Math.min(num1,num2);
+
 }
+
 
 /**
  * Returns the largest value of two numbers.
@@ -151,21 +151,36 @@ function minimum(x,y){
  * @param {number} y
  * @return {number} the largest number
  */
+function maximum(num1, num2){
+  return Math.max(num1,num2);
 
+}
 
 /**
  * Returns true if `n` is even.
  * @param {number} n
  * @return {boolean} the number is even
  */
+function isEven(num){
+  if(num %2 === 0){
+    return true;
 
-
+    }else{
+      return false;
+    }
+}
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
-
+function isOdd(num){
+  if (num % 1 === 0){
+    return true;
+  }else{
+    return false;
+  }
+}
 
 /**
  * Returns a letter grade.
@@ -179,7 +194,25 @@ function minimum(x,y){
  * @return {string} the score represented as a letter grade
  */
 
+function letterGrade(score, total){
 
+  var grade = (score/total) * 100;
+if(grade >= 90){
+  return  "A";
+}else{
+  if(grade >= 80){
+    return  "B";
+  }else if(grade >= 70){
+      return "C";
+
+    }else if(grade >= 60){
+        return "D";
+      }else if(grade>=0){
+          return "F";
+        }
+      }
+
+}
 /**
  * Checks if a `restaurant` object has a `reviews` property.
  * If it does, increase the property's `reviews` value by 1.
@@ -188,7 +221,10 @@ function minimum(x,y){
  * @return {object} restaurant
  */
 
+function incrementReviews(object, reviews){
 
+
+}
 /**
  * Joins two strings with a space.
  * @param {string} word1
@@ -196,6 +232,8 @@ function minimum(x,y){
  * @return {string} joined the words joined with a space
  */
 
+function combine(word1, word2){
+  }
 
 /**
  * Returns a circle object with the properties `circumference` and `area`.
