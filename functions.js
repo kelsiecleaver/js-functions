@@ -3,21 +3,27 @@
  * @param {number} n
  * @return {string} the number as a string
  */
-
+function numberToString(num){
+return num.toString();
+}
 
 /**
  * Adds one to a given number.
  * @param {number} n
  * @return {number}
  */
-
+function increase(num1){
+  return num1 + 1;
+}
 
 /**
  * Subtracts one from a given number.
  * @param {number} n
  * @return {number}
  */
-
+function decrease(num1){
+  return num1 - 1;
+}
 
 /**
  * Adds two numbers.
@@ -25,7 +31,9 @@
  * @param {number} y
  * @return {number} the sum
  */
-
+function add(num1, num2){
+  return num1 + num2;
+}
 
 /**
  * Subtracts the second number from the first.
@@ -33,6 +41,9 @@
  * @param {number} y
  * @return {number} the difference
  */
+ function subtract(num1, num2){
+  return num1 - num2;
+ }
 
 
 /**
@@ -41,7 +52,9 @@
  * @param {number} y
  * @return {number} the product
  */
-
+function multiply(num1,num2){
+  return num1 * num2;
+}
 
 /**
  * Divides the first number by the second.
@@ -49,6 +62,9 @@
  * @param {number} y
  * @return {number} the quotient
  */
+ function divide(num1, num2){
+  return num1 / num2;
+ }
 
 
 /**
@@ -56,7 +72,9 @@
  * @param {number} x, number to be squared
  * @return {number} squared
  */
-
+function square(num1){
+  return num1 * num1;
+}
 
 /**
  * Performs a mathematical operation on two numbers.
