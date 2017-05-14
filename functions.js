@@ -221,9 +221,13 @@ if(grade >= 90){
  * @return {object} restaurant
  */
 
-function incrementReviews(object, reviews){
-
-
+function incrementReviews(restaurant){
+if(restaurant.hasOwnProperty("reviews")){
+  restaurant.reviews += 1;
+}else{
+  restaurant.reviews = 1;
+}
+return restaurant;
 }
 /**
  * Joins two strings with a space.
@@ -233,6 +237,7 @@ function incrementReviews(object, reviews){
  */
 
 function combine(word1, word2){
+  return word1.concat(" ", word2);
   }
 
 /**
@@ -243,3 +248,10 @@ function combine(word1, word2){
  * @return {object} circle
  */
 
+function createCircle(num){
+  var circle = {};
+  circle.circumference = 2 * Math.PI * num;
+  circle.area = num * num * Math.PI;
+  return circle;
+
+}
