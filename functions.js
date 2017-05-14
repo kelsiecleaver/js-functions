@@ -84,6 +84,9 @@ function square(num1){
  * @param {number} y
  * @return {number} the result
  */
+ function calculate(num1, num2){
+
+ }
 
 
 /**
@@ -92,7 +95,13 @@ function square(num1){
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
-
+function isGreaterThan(a,b){
+  if(a > b){
+    return true;
+  }else{
+    return false;
+  }
+}
 
 /**
  * Returns true if `a` is less than `b`.
@@ -100,6 +109,13 @@ function square(num1){
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
+ function isLessThan(a,b){
+  if(a < b){
+    return  true;
+  }else{
+    return false;
+  }
+ }
 
 
 /**
@@ -108,6 +124,13 @@ function square(num1){
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
+ function areEqual(a,b){
+  if(a === b){
+    return true;
+  }else{
+    return false;
+  }
+ }
 
 
 /**
@@ -116,7 +139,11 @@ function square(num1){
  * @param {number} y
  * @return {number} the smallest number
  */
-
+function minimum(x,y){
+  if(x < y){
+    return  y;
+  }
+}
 
 /**
  * Returns the largest value of two numbers.
