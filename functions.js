@@ -73,7 +73,7 @@ function multiply(num1,num2){
  * @return {number} squared
  */
 function square(num1){
-  return num1 * num1;
+  return num1 * num1;//return Math.pow(x, 2);
 }
 
 /**
@@ -84,10 +84,29 @@ function square(num1){
  * @param {number} y
  * @return {number} the result
  */
- function calculate(num1, num2){
 
+ function calculate(str, x, y){
+  var operator = "";
+  var result = null;
+  if(str === "add"){
+    operator = " + ";
+    result = x + y;
+  }
+  else if(str === "subtract"){
+    operator = " - ";
+    result = x - y;
+  }
+  else if(str === "multiply"){
+    operator = " * ";
+    result = x * y;
+  }
+  else if(str === "divide"){
+    operator = " / ";
+    result = x / y;
+  }
+  console.log(x + operator + y + " = " + result);
+  return result;
  }
-
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -102,6 +121,7 @@ function isGreaterThan(a,b){
     return false;
   }
 }
+//return a < b;
 
 /**
  * Returns true if `a` is less than `b`.
@@ -116,7 +136,7 @@ function isGreaterThan(a,b){
     return false;
   }
  }
-
+// return a < b;
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -131,7 +151,7 @@ function isGreaterThan(a,b){
     return false;
   }
  }
-
+// return a === b;
 
 /**
  * Returns the smallest value of two numbers.
@@ -239,7 +259,7 @@ return restaurant;
 function combine(word1, word2){
   return word1.concat(" ", word2);
   }
-
+// return [word1, word2].join(' ');
 /**
  * Returns a circle object with the properties `circumference` and `area`.
  * Use Math.PI for the value π.
